@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deprem Bilgi Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script> -->
+    <script src="http://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+    <script src="lib/leaflet/leaflet-providers.js"></script>
+    <!-- <script src="js/leaflet.js"></script> -->
+    <script src="lib/leaflet/L.Control.Locate.min.js"></script>
+    <script src="lib/leaflet/leaflet-control-geocoder.Geocoder.js"></script>
+    <script src="lib/leaflet/leaflet-measure.js"></script>
+    <script src="lib/leaflet/leaflet.rotatedMarker.js"></script>
+
+    <!-- <link rel="stylesheet" href="lib/leaflet/fontawesome-all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="lib/leaflet/L.Control.Locate.min.css">
+    <link rel="stylesheet" href="lib/leaflet/leaflet-control-geocoder.Geocoder.css">
+    <link rel="stylesheet" href="lib/leaflet/leaflet-measure.css">
+    <!-- <script src="../public/data/images.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+    <link rel="stylesheet" href="lib/leaflet/MarkerCluster.css">
+    <link rel="stylesheet" href="lib/leaflet/MarkerCluster.Default.css">
+    <script src="lib/leaflet/leaflet.markercluster.js"></script>
+
+
+</head>
+
+<body>
+    <div id="appContainer">
+
+        <div id="appHeader"> Deprem Bilgi Sistemi</div>
+
+        <div id="appBody">
+            <div id="data">
+
+                <h2>Depremleri Filtrele </h2>
+                <hr>
+                <input type="range" min="0" max="10" value="0" class="slider">
+                <br>
+                <div id="magInfo">
+                    <p> Minimum Magnitude :
+                        <label id="magnitude-range">0</label>
+                    </p>
+                </div>
+
+                <h2>Gerçekleşen Depremler</h2>
+                <hr>
+                <div id="info"></div>
+
+            </div>
+            <div id="map"></div>
+
+
+        </div>
+        <!-- <script src="http://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> -->
+        <script src="index.js"></script>
+</body>
+
+</html>
